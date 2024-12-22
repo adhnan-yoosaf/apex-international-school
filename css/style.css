@@ -1,0 +1,368 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header nav .navbar-nav .nav-item{
+    font-size: 13px;
+    font-weight: bold;
+    color: #28285f;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.bi-chevron-down{
+    font-size: 10px;
+}
+.dropdown-menu{
+    border-radius: 0px;
+    border: none;
+}
+.dropdown-item{
+    font-size: 12px;
+    font-weight: bold;
+    color: #70798b;
+}
+
+@media(min-width:992px){
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
+    .offcanvas-body ul{
+        gap: 15px;
+    }
+}
+.carousel-caption{
+    text-align: left;
+}
+.carousel-caption h2{
+    font-size: 50px;
+    line-height: 1.4;
+}
+.carousel-caption p{
+    font-size: 15px;
+    color: rgba(255, 255, 255, .7);
+    margin-top: 10px;
+    line-height: 1.9;
+}
+.carousel-item{
+    position: relative;
+}
+.carousel-caption { 
+    position: absolute; 
+    top: 50%; transform: 
+    translateY(-50%); 
+    color: white; 
+    text-align: left; 
+} 
+@media(max-width:768px){
+    .carousel-caption h2{
+        font-size: 25px;
+    }
+}
+.carousel-item .btn{
+    background-color: #28285f;
+    color: #fff;
+    border-radius: 50px;
+    padding: 13px 25px;
+    font-size: 14px;
+}
+
+.content-wrapper main{
+    background-image: url('https://apexinternationalschool.org/img/bg/bulb.jpg');
+}
+
+.section-2-heading h2{
+    color: #2c3691;
+    margin-bottom: 10px;
+    line-height: 160%;
+    font-size: 30px;
+}
+
+.heading-line-left::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #28285f;
+    border-radius: 25%;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.apex-span{
+    color: #ea3844;
+    font-size: 15px;
+}
+.section-2 .text-content{
+    color: #999;
+    font-size: 14px;
+    line-height: 190%;
+}
+.video{
+    padding-top: 200px;
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+.section-3{
+    background: url('https://apexinternationalschool.org/img/bg/doodle.jpg');
+}
+h3{
+    color: #111;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.heading-line-center::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #28285f;
+    border-radius: 25%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.section-3 .card{
+    border-radius: 5px;
+    border: 1px solid #eee;
+    position: relative;
+}
+.section-3 .card-text{
+    color: #999;
+    font-size: 15px;
+    line-height: 1.7;
+}
+.date-box{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #28285f;
+    min-width: 60px;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.date-box h4{
+    font-size: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+    margin-top: 10px;
+}
+.section-4 .container{
+    padding-top: 90px;
+}
+
+.section-4 .container .row .image-div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.image-div img{
+    width: 100%;
+}
+.image-div{
+    position: relative;
+}
+.hover-effect{
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    right: 0;
+    top: 5%;
+    bottom: 2.6%;
+    background: rgba(255, 255, 255, .9);
+    overflow: hidden;
+    width: 90%;
+    height: 90%;
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.image-div:hover .hover-effect{
+    opacity: 1;
+}
+
+.image-div h4{
+    color: #111;
+    font-size: 22px;
+    font-weight: 400;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.image-div h4::after{
+    display: block;
+    content: '';
+    width: 70px;
+    height: 1px;
+    background-color: #28285f;
+    margin: 10px auto;
+}
+
+.image-div:hover h4{
+    top: 40%;
+    opacity: 1;
+}
+
+.section-5{
+    background-color: #fff;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.377);
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.school-link {
+    position: absolute;
+    top: 10px;
+    left: 70px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+.school-link:hover{
+    text-decoration: underline;
+}
+
+.follow-btn {
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 0 5px;
+    background-color: #fff;
+    color: #4b4f56;
+    text-decoration: none;
+    border: none;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.follow-btn img {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+.follow-btn:hover {
+    background-color: whitesmoke;
+}
+
+.scrolling-window {
+    width: 100%;
+    height: 370px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.scrolling-window img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.section-6 h6{
+    font-size: 20px;
+}
+.section-6 a{
+    color: #fff;
+    background-color: #28285f;
+    border-radius: 50px;
+    padding: 11px 22px;
+    text-decoration: none;
+    font-size: 12px;
+}
+.section-6 .apply-btn{
+    margin-top: 15px;
+}
+
+footer{
+    background: #2e358f;
+    color: #fff;
+}
+footer h3{
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+footer li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+footer li a i{
+    font-size: 8px;
+    padding-right: 8px;
+}
+footer ul{
+    list-style: none;
+    padding-left: 0px;
+}
+footer ul li{
+    padding: 5px 0;
+}
+footer h3:after {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 2px;
+    background: #28285f;
+    margin-top: 10px;
+}
+
+.footer-bottom p{
+    margin: 0px;
+    padding: 20px;
+    font-size: 15px;
+}
+.footer-bottom p::before{
+    content: '';
+    background-color: rgba(80, 80, 203, 0.599);
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
